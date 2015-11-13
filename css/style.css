@@ -275,3 +275,8 @@ pre {
 .gist .pl-s1, .gist .pl-pds {
   color: #76A22F;
 }
+
+.intro {
+    font-size: 24px;
+    font-weight: bold;
+}
