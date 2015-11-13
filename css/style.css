@@ -44,17 +44,32 @@ p {
 
 
 
-.backgroundimage {
-    position: relative;
+
+.background {
+     position: relative;
     background-position: 50%;
     margin: 0 auto;
-    background-image:url("../images/Verizon_Minecraft_02.jpg");
     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
+}
+
+.backgroundimage {
+    background-image:url("../images/verizon_minecraft_world.png");
     height: 80vh;
+}
+
+
+.backgroundimage2 {
+    background-image:url("../images/Verizon_Minecraft_04.jpg");
+    height: 40vh;
+}
+
+.backgroundimage3 {
+    background-image:url("../images/Verizon_Minecraft_05.jpg");
+    height: 40vh;
 }
 
 .wrapper {
@@ -276,7 +291,14 @@ pre {
   color: #76A22F;
 }
 
-.intro {
-    font-size: 24px;
-    font-weight: bold;
+.paragraph {
+    font-size: 26px;
+    margin-top: 1em;
 }
+
+.paragraphsmall {
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+

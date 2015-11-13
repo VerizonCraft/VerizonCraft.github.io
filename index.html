@@ -59,53 +59,97 @@
 
 <div class="container">
     <div class="row vert-offset-top-8 verizon-red no-gutters">
-        <h1><b>How we added Verizon<br> into the world<br>of Minecraft.</b></h1>
+        <h1><b>How we simulated<br> the Verizon network<br> in Minecraft.</b></h1>
     </div>
 </div>
 
 
 <div class="wrapper">
-    <div class="backgroundimage vert-offset-top-6"></div>
+    <div class="backgroundimage background vert-offset-top-6"></div>
 </div>
 
 
 <div class="container">
     <div class="row vert-offset-top-6 no-gutters">
-      <p class="intro">
-        TESTING TESTING TESTING! Believe it or not, until recently it was impossible to order a pizza from Minecraft.
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <p>
+        Believe it or not, until recently it was impossible to order a pizza from Minecraft.
         In fact, you couldn’t make a phone call, send a text message, or browse the web from the game even if you
         built a phone.
       </p>
-      <p class="intro">
+      <p>
         Verizon endeavored to solve these problems by building a phone in Minecraft that can actually connect to the real world without leaving the game.
         With the help of <a href="http://wk.com">Wieden+Kennedy</a> and <a href="http://blockworksmc.com">Blockworks</a>, we built custom functionality that lets players browse the Internet,
         make video calls, and create a selfie stick to send an MMS selfie to a friend.
       </p>
-      <p class="intro">
-        Minecraft experts like <a href="http://sethbling.com">Seth Bling</a> and <a href="http://youtube.com/captainsparklez">Captain Sparklez</a> joined to “beta test” these features and show how they would use a working phone in the game.
+      <p>
+        Minecraft experts like <a href="http://sethbling.com">SethBling</a> and <a href="http://youtube.com/captainsparklez">CaptainSparklez</a> joined to “beta test” these features and show how they would use a working phone in the game.
       </p>
+    <div class="col-md-2"></div>
     </div>
+    </div>
+</div>
+    
+<div class="wrapper">
+    <div class="backgroundimage2 background vert-offset-top-6"></div>
+</div>    
 
-    <div class="row vert-offset-top-6">
-        <div class="col-md-12"><img src="images/verizon_phone_05.jpg" class="img-responsive"></div>
-    </div>
+<div class="container">    
 
      <div class="row vert-offset-top-6 no-gutters">
-        <h2><b style="color: #000">The Features.</b><br>&nbsp;</h2>
+        <h2><b style="color: #000"><center>The Features.</center></b><br>&nbsp;</h2>
      </div>
 
-    <div class="row vert-offset-top-2">
+    <div class="row vert-offset-top-0">
         <div class="col-md-4">
-          <img src="images/verizon_phone_02.jpg" class="img-responsive">
+          <img src="images/verizon_minecraft_videocall.gif" class="img-responsive">
           <br><p><b style="color: #000">Video Call</b><br>&nbsp;<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in massa nunc. In commodo efficitur sollicitudin. Nullam et felis porttitor, tempus dui non, tincidunt nulla. Morbi finibus mi vitae metus convallis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>&nbsp;</p></h4></div>
         <div class="col-md-4">
-          <img src="images/verizon_minecraft_cellphone.jpg" class="img-responsive">
+          <img src="images/verizon_minecraft_selfie.png" class="img-responsive">
           <br><p><b style="color: #000">Text/MMS</b><br>&nbsp;<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in massa nunc. In commodo efficitur sollicitudin. Nullam et felis porttitor, tempus dui non, tincidunt nulla. Morbi finibus mi vitae metus convallis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>&nbsp;</p></h4></div>
-        <div class="col-md-4"><img src="images/verizon_phone_03.jpg" class="img-responsive"><br><p><b style="color: #000">Web Browsing</b><br>&nbsp;<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in massa nunc. In commodo efficitur sollicitudin. Nullam et felis porttitor, tempus dui non, tincidunt nulla. Morbi finibus mi vitae metus convallis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>&nbsp;</p></h4></div>
+        <div class="col-md-4"><img src="images/verizon_minecraft_internet.gif" class="img-responsive"><br><p><b style="color: #000">Web Browsing</b><br>&nbsp;<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in massa nunc. In commodo efficitur sollicitudin. Nullam et felis porttitor, tempus dui non, tincidunt nulla. Morbi finibus mi vitae metus convallis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>&nbsp;</p></h4></div>
+    </div>
+
+</div>
+
+<div class="wrapper">
+    <div class="backgroundimage3 background vert-offset-top-6"></div>
+</div>  
+
+<div class="container">   
+     <div class="row vert-offset-top-6 no-gutters">
+        <h2><b style="color: #000"><center>How we built it.</center></b><br>&nbsp;</h2>
+     </div>
+     <div class="row vert-offset-top-0 no-gutters">
+        <div class="col-sm-2"></div>
+         <div class="col-sm-8">
+          <p>In the world of Minecraft, almost everything is made of blocks.
+            We’ve created a web application, <a href="https://github.com/verizoncraft/boxel">boxel</a>, that translates real web pages and
+            streaming video into blocks so it can be built on our Minecraft
+            server in real-time. A server plugin uses <a href="https://github.com/verizoncraft/boxelclient">boxel-client</a> to handle the communication
+            between Minecraft and the real-world as translated by the web
+            application.  We’ve open sourced these libraries -- so if you can write a little code you can try it for yourself<br/>&nbsp;</p>
+        </div>
+        <div class="col-sm-2"></div> 
+     </div>
+
+
+    <div class="row vert-offset-top-2 no-gutters">
+
+        <div class="col-sm-12">
+            <div style="overflow-y: auto; max-height: 600px;">
+              <code class="gist" data-gist-id="27322e6a05181161c82c" data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
+            </div>
+        </div>
+    </div>
+
+    <div class="row vert-offset-top-2">
+        <div class="col-md-12"><img src="images/ezgif.com-resize-2.gif" class="img-responsive"></div>
     </div>
 
      <div class="row vert-offset-top-6 no-gutters">
-        <h2><b style="color: #000">The Demos.</b><br>&nbsp;</h2>
+        <h2><b style="color: #000"><center>The Demos.</center></b><br>&nbsp;</h2>
      </div>
 
     <div class="row vert-offset-top-2">
@@ -122,34 +166,6 @@
      </div>
     </div>
 
-
-     <div class="row vert-offset-top-6 no-gutters">
-        <h2><b style="color: #000">How we built it.</b><br>&nbsp;</h2>
-     </div>
-     <div class="row vert-offset-top-2 no-gutters">
-        <div class="col-sm-8">
-          <p>In the world of Minecraft, almost everything is made of blocks.
-            We’ve created a web application, <a href="https://github.com/verizoncraft/boxel">boxel</a>, that translates real web pages and
-            streaming video into blocks so it can be built on our Minecraft
-            server in real-time. A server plugin uses <a href="https://github.com/verizoncraft/boxelclient">boxel-client</a> to handle the communication
-            between Minecraft and the real-world as translated by the web
-            application.  We’ve open sourced these libraries -- so if you can write a little code you can try it for yourself<br/>&nbsp;</p>
-        </div>
-     </div>
-
-
-    <div class="row vert-offset-top-2 no-gutters">
-
-        <div class="col-sm-12">
-            <div style="overflow-y: auto; max-height: 600px;">
-              <code class="gist" data-gist-id="27322e6a05181161c82c" data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
-            </div>
-        </div>
-    </div>
-
-    <div class="row vert-offset-top-6">
-        <div class="col-md-12"><img src="images/ezgif.com-resize-2.gif" class="img-responsive"></div>
-    </div>
 
      <div class="row vert-offset-top-12 no-gutters">
      </div>
