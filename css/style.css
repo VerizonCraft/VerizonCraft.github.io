@@ -43,7 +43,9 @@ p {
 }
 
 
-
+.gitbutton {
+    margin-top: 10px;
+}
 
 .background {
      position: relative;
@@ -63,13 +65,18 @@ p {
 
 
 .backgroundimage2 {
-    background-image:url("../images/Verizon_Minecraft_04.jpg");
-    height: 40vh;
+    background-image:url("../images/verizon_minecraft_screen.png");
+    height: 60vh;
 }
 
 .backgroundimage3 {
-    background-image:url("../images/Verizon_Minecraft_05.jpg");
-    height: 40vh;
+    background-image:url("../images/verizon_minecraft_tower.png");
+    height: 60vh;
+}
+
+.backgroundimage4 {
+    background-image:url("../images/verizon_minecraft_engineer.png");
+    height: 60vh;
 }
 
 .wrapper {
@@ -284,6 +291,10 @@ pre {
   color: #F9B195;
 }
 
+.gist .pl-s {
+    color: #F9B195;
+}
+
 .gist .pl-k,  .gist .pl-st {
   color: #8BCDAB;
 }
@@ -301,4 +312,6 @@ pre {
     margin-top: 1em;
 }
 
-
+h3 {
+    font-weight: bold;
+}

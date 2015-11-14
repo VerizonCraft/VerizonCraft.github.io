@@ -41,8 +41,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">GitHub</a></li>
-        <li class="dropdown">
+        <li><iframe class="gitbutton" src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=fork&count=true&size=large&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe></li>
+          <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Share <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Post on Facebook</a></li>
@@ -86,8 +86,8 @@
       <p>
         Minecraft experts like <a href="http://sethbling.com">SethBling</a> and <a href="http://youtube.com/captainsparklez">CaptainSparklez</a> joined to “beta test” these features and show how they would use a working phone in the game.
       </p>
-    <div class="col-md-2"></div>
     </div>
+    <div class="col-md-2"></div>
     </div>
 </div>
     
@@ -103,12 +103,37 @@
 
     <div class="row vert-offset-top-0">
         <div class="col-md-4">
-          <img src="images/verizon_minecraft_videocall.gif" class="img-responsive">
-          <br><p><b style="color: #000">Video Call</b><br>&nbsp;<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in massa nunc. In commodo efficitur sollicitudin. Nullam et felis porttitor, tempus dui non, tincidunt nulla. Morbi finibus mi vitae metus convallis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>&nbsp;</p></h4></div>
+          <img src="images/verizon_minecraft_videocall.gif" class="img-responsive imagepadding">
+          <br />
+          <p style="color: #000; font-weight: bold;">Video Call</p>
+          <p class="paragraphsmall" >
+            Using their in-game phone, players can send and receive video calls.
+            In the game, you'll see your friends' face translated into Minecraft
+            blocks in real time. On the other end of the call, you'll be able
+            to see the player's avatar moving around.<br>&nbsp;
+          </p>
+        </div>
         <div class="col-md-4">
-          <img src="images/verizon_minecraft_selfie.png" class="img-responsive">
-          <br><p><b style="color: #000">Text/MMS</b><br>&nbsp;<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in massa nunc. In commodo efficitur sollicitudin. Nullam et felis porttitor, tempus dui non, tincidunt nulla. Morbi finibus mi vitae metus convallis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>&nbsp;</p></h4></div>
-        <div class="col-md-4"><img src="images/verizon_minecraft_internet.gif" class="img-responsive"><br><p><b style="color: #000">Web Browsing</b><br>&nbsp;<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in massa nunc. In commodo efficitur sollicitudin. Nullam et felis porttitor, tempus dui non, tincidunt nulla. Morbi finibus mi vitae metus convallis commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>&nbsp;</p></h4></div>
+          <img src="images/verizon_minecraft_selfie.png" class="img-responsive imagepadding">
+          <br />
+          <p style="color: #000; font-weight: bold;">Text/MMS</p>
+          <p class="paragraphsmall" >
+            Players can create a selfie stick by combining their in-game phone
+            with a stick. By swinging the stick, they can take a selfie and
+            send it to a real-world phone via MMS.<br>&nbsp;
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/verizon_minecraft_internet.gif" class="img-responsive imagepadding">
+           <br />
+           <p style="color: #000; font-weight: bold;">Web Browsing</p>
+           <p class="paragraphsmall" >
+             We built a browser that connects directly to the Internet and
+             translates real web pages to blocks so we can show them on the screen of your in-game phone (which is also
+             made of blocks). Players can load any page from the Internet and
+             scroll to view the whole thing.<br>&nbsp;
+           </p>
+       </div>
     </div>
 
 </div>
@@ -122,46 +147,102 @@
         <h2><b style="color: #000"><center>How we built it.</center></b><br>&nbsp;</h2>
      </div>
      <div class="row vert-offset-top-0 no-gutters">
-        <div class="col-sm-2"></div>
-         <div class="col-sm-8">
+        <div class="col-md-2"></div>
+         <div class="col-md-8">
           <p>In the world of Minecraft, almost everything is made of blocks.
             We’ve created a web application, <a href="https://github.com/verizoncraft/boxel">boxel</a>, that translates real web pages and
-            streaming video into blocks so it can be built on our Minecraft
-            server in real-time. A server plugin uses <a href="https://github.com/verizoncraft/boxelclient">boxel-client</a> to handle the communication
-            between Minecraft and the real-world as translated by the web
-            application.  We’ve open sourced these libraries -- so if you can write a little code you can try it for yourself<br/>&nbsp;</p>
+            streaming video into blocks so it can be built on a Minecraft server in real-time.
+            Our server plugin uses <a href="https://github.com/verizoncraft/boxelclient">boxel-client</a> to handle the communication
+            between Minecraft and the real-world as translated by the web application.
+           </p>
+           <p>
+            We’ve open sourced these libraries -- so if you can write a little code you can try it for yourself<br/>&nbsp;</p>
+           </p>
+           <p>
+             For example, if you wanted to draw video to a screen in your Minecraft plugin, you could add the boxel-client library to your plugin
+             and make a connection to a Boxel server like so:
+           </p>
         </div>
-        <div class="col-sm-2"></div> 
+    <div class="col-md-2"></div> 
      </div>
 
 
-    <div class="row vert-offset-top-2 no-gutters">
-
-        <div class="col-sm-12">
+    <div class="row vert-offset-top-3 no-gutters">
+        <div class="col-md-12">
             <div style="overflow-y: auto; max-height: 600px;">
               <code class="gist" data-gist-id="27322e6a05181161c82c" data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
             </div>
         </div>
     </div>
-
-    <div class="row vert-offset-top-2">
-        <div class="col-md-12"><img src="images/ezgif.com-resize-2.gif" class="img-responsive"></div>
+    
+    <div class="row vert-offset-top-3 no-gutters">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>
+              If you've got a boxel client and server running, you can publish frames of video from your webcam to the stream with a little bit of Javascript:
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    
+    <div class="row vert-offset-top-3 no-gutters">
+        <div class="col-md-12">
+            <div style="overflow-y: auto; max-height: 600px;">
+              <code class="gist" data-gist-id="bc654d3ce90906dc327d" data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row vert-offset-top-3 no-gutters">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>
+              Your screen will look something like this:
+            </p>
+        </div>
+        <div class="col-md-2"></div>
     </div>
 
+    <div class="row vert-offset-top-3 no-gutters">
+        <div class="col-md-12">
+          <img src="images/ezgif.com-resize-2.gif" class="img-responsive">
+        </div>
+    </div>
+    
+    <div class="row vert-offset-top-3 no-gutters">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>
+           Visit
+           <a href="https://github.com/verizoncraft/boxel-client">Boxel</a> and
+           <a href="https://github.com/verizoncraft/boxel-client">boxel-client</a>
+           on Github for more documentation to help you get started.
+           </p>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+    
+<div class="wrapper">
+    <div class="backgroundimage4 background vert-offset-top-6"></div>
+</div>      
+    
+<div class="container">
+    
      <div class="row vert-offset-top-6 no-gutters">
         <h2><b style="color: #000"><center>The Demos.</center></b><br>&nbsp;</h2>
      </div>
 
-    <div class="row vert-offset-top-2">
+    <div class="row vert-offset-top-0">
      <div class="col-md-6">
         <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/goDd02TTxBA"></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oBj-pBFkemA"></iframe>    
         </div>
      </div>
 
      <div class="col-md-6">
         <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/U43ttqv3MPk"></iframe>
         </div>
      </div>
     </div>
@@ -172,8 +253,6 @@
 
 
 </div>
-
-
 
 </body>
 </html>
