@@ -38,7 +38,7 @@ body,html {
 
 
 p {
-    font-size: 20px;
+    font-size: 1em;
     text-align: left;
 }
 
@@ -267,12 +267,12 @@ pre {
 .gist .blob-wrapper {
     background: #313533;
     padding: 2em;
-    font-size: 16px;
+    font-size: 1em;
 }
 .gist .blob-code {
   color: #ffffff;
   background: #313533;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .gist .gist-meta {
@@ -303,15 +303,18 @@ pre {
 }
 
 .paragraph {
-    font-size: 26px;
+    font-size: 1em;
     margin-top: 1em;
 }
 
 .paragraphsmall {
-    font-size: 16px;
+    font-size: 1em;
     margin-top: 1em;
 }
 
-h3 {
+.gist .highlight {
+    background: inherit !important;
+}
+h1, h2, h3 {
     font-weight: bold;
 }
