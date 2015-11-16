@@ -33,7 +33,7 @@ body,html {
   transition: font-size 0.2s ease-out;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-
+  -webkit-overflow-scrolling: touch;
 }
 
 
