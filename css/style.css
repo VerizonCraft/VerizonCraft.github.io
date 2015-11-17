@@ -1,0 +1,303 @@
+/* imports */
+
+
+
+/* resets */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* global */
+
+body,html {
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 16px;
+    overflow-x: hidden;
+  -webkit-transition: font-size 0.2s ease-out;
+  -moz-transition: font-size 0.2s ease-out;
+  -o-transition: font-size 0.2s ease-out;
+  -ms-transition: font-size 0.2s ease-out;
+  transition: font-size 0.2s ease-out;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+p {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+
+.gitbutton {
+    margin-top: 10px;
+}
+
+.background {
+     position: relative;
+    background-position: 50%;
+    margin: 0 auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+.backgroundimage {
+    background-image:url("../images/verizon_minecraft_world.png");
+    height: 70vh;
+}
+
+
+.backgroundimage2 {
+    background-image:url("../images/verizon_minecraft_screen2.png");
+    height: 70vh;
+}
+
+.backgroundimage3 {
+    background-image:url("../images/verizon_minecraft_tower.png");
+    height: 70vh;
+}
+
+.backgroundimage4 {
+    background-image:url("../images/verizon_minecraft_engineer.png");
+    height: 70vh;
+}
+
+.wrapper {
+  background-color: #f6f6f6;
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 100%;
+  position: relative;
+}
+
+
+
+
+
+
+.row img  {
+  margin: 0px 0px 0px 0px;
+}
+
+
+@media only screen and (min-width:1020px){
+   /*.article {  max-width:740px}
+/*    body { font-size: 21px;}*/
+}
+
+
+.middlealign {
+    vertical-align: middle;
+}
+
+
+
+.verizon-red
+{
+ color: #cd040b;
+}
+
+
+
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.code {
+  color: #fff;
+  margin: 50px;
+  width: 80%;
+  display:none;
+}
+
+code {
+    font-size: 16px;
+    background-color: transparent !important;
+}
+
+pre {
+  padding: 20px;
+  color: #ffffff;
+  background: #313533;
+}
+
+.gist {
+    width: 100%;
+    float: left;
+    display: auto;
+}
+
+.gist .blob-wrapper {
+    background: #313533;
+    padding: 2em;
+    font-size: 1.25em;
+}
+.gist .blob-code {
+  color: #ffffff;
+  background: #313533;
+  font-size: 1.25em;
+}
+
+.gist .gist-meta {
+  color: #ffffff;
+  background: #000000;
+}
+
+.gist .pl-smi {
+  color: #8AD6F7;
+}
+.gist .pl-vo, .gist .pl-v, body .gist .pl-vpf {
+  color: #ffffff;
+}
+
+.gist .pl-en, .gist .pl-c1, body .gist .pl-s3 {
+  color: #F9B195;
+}
+
+.gist .pl-s {
+    color: #F9B195;
+}
+
+.gist .pl-k,  .gist .pl-st {
+  color: #8BCDAB;
+}
+.gist .pl-s1, .gist .pl-pds {
+  color: #76A22F;
+}
+
+.paragraph {
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.paragraphsmall {
+    font-size: 1.25em;
+    margin-top: 1em;
+}
+
+.whitespacetopbottom {
+    margin: 80px 0px 80px 0px;
+}
+
+.whitespacebottom {
+    margin: 0px 0px 80px 0px;
+}
+
+.whitespacetop {
+    margin: 160px 0px 0px 0px;
+}
+
+.whitespacetop50 {
+    margin: 40px 0px 0px 0px;
+}
+
+.gist .highlight {
+    background: inherit !important;
+}
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Extra Small Devices, .visible-xs-* */
+@media (max-width: 321px) {
+    .container {
+      padding:30px;
+    }
+    
+    .background {
+       height: 40vh !important;
+   }
+    p {
+       font-size: 1em;
+   }
+
+    h1 {
+        font-size: 1.75em;
+    }
+    
+.paragraphsmall {
+    font-size: 1em;
+    margin-top: .5em;
+}
+
+.whitespacetopbottom {
+    margin: 20px 0px 20px 0px;
+}
+
+.whitespacetop {
+    margin: 20px 0px 0px 0px;
+}
+
+.whitespacetop50 {
+    margin: 15px 0px 0px 0px;
+}
+
+}
+
+/* Small Devices, .visible-sm-* */
+@media (min-width: 322px) and (max-width: 991px)
+{
+    .container {
+      padding:40px;
+    }
+    .background {
+       height: 40vh !important;
+   }
+    p {
+       font-size: 1em;
+   }    
+    h1 {
+        font-size: 1.75em;
+    }
+    .paragraphsmall {
+    font-size: 1em;
+    margin-top: .5em;
+}
+
+.whitespacetopbottom {
+    margin: 20px 0px 20px 0px;
+}
+
+.whitespacetop {
+    margin: 20px 0px 0px 0px;
+}
+
+.whitespacetop50 {
+    margin: 15px 0px 0px 0px;
+}
+}
+
+/* Medium Devices, .visible-md-* */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Large Devices, .visible-lg-* */
+@media (min-width: 1200px) {
+
+}
+
