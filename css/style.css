@@ -255,13 +255,19 @@ p {
 
 code {
     font-size: 16px;
-    background-color: transparent; !important
+    background-color: transparent !important;
 }
 
 pre {
   padding: 20px;
   color: #ffffff;
   background: #313533;
+}
+
+.gist {
+    width: 100%;
+    float: left;
+    display: auto;
 }
 
 .gist .blob-wrapper {
